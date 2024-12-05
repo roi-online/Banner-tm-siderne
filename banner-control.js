@@ -38,18 +38,18 @@ var websiteLogo = "https://roi-online.dk/wp-content/webp-express/webp-images/doc
 
 var logoWidth = "200px";
 
-var darkModeEnable = true;
+var darkModeEnable = false;
 
 var darkModeDefault = localStorage.getItem("viewMode") ? localStorage.getItem("viewMode") : "light";
 
 var showIconOfModes = true;
 
-var secondBannerEnable = true;
+var secondBannerEnable = false;
 var defaultConsent = false;
 
 var onClickAccept = "granted";
 var onClickCustom = "normal";
-var onClickDeclined = "denied";
+var onClickDeclined = "granted";
 
 var onClickAcceptSecond = "granted";
 var onClickDeclinedSecond = "denied";
@@ -58,7 +58,7 @@ var secondBannerShowingTime = 20;
 
 var storeQuery = true;
 var addBackToUrl = true;
-var queryParamsToStore = ['gcild', 'utm_source', 'utm_medium'];
+var queryParamsToStore = ['gclid', 'utm_source', 'utm_medium'];
 
 const root = document.querySelector(':root');
 var rootStyle = getComputedStyle(root);
